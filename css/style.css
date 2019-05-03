@@ -15,6 +15,7 @@ body{
   height: 110px;
   background: #000030;
   color: #fff;
+  z-index: 1;
 }
 .logo{
   background: #000030;
@@ -72,34 +73,40 @@ body{
 }
 
 /*MOVIMENTO*/
-.movimento{
-  background-color: #fff;
+.movimento2-grid{
+  display: grid;
+  grid-template-columns: 1fr;
 }
 .movimento img{
-  padding-left: 40px;
-  background-color: #fff;
+background-color: #fff;
+max-width: 100%;
 }
-.movimento p{
-  text-align: left;
-  padding: 40px;
-  padding-bottom:100px;
-  font-family: "montserrat";
-  font-style: #424242;
-  background: #fff;
-}
-.imagem{
-  padding-left: 5px;
-  padding-top: 30px;
-  background-color: #fff;
-  float: right;
-}
-/*EVENTO*/
-.evento img{
-  width: 100%;
+.movimento-grid p{
+text-align: left;
+font-family:"Quicksand";
+background: #fff;
 }
 
+.movimento-grid{
+display: grid;
+grid-template-columns: 1fr 1fr;
+justify-content: center;
+justify-item: center;
+}
+
+/*PARCERIA*/
+.parcerias-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/*EVENTO*/
+.evento-grid{
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+}
 .container{
-  padding-right: 100px;
+  padding-bottom: 40px;
 }
 
 /*CONTATO*/
@@ -110,29 +117,36 @@ body{
   font-family:"Raleway";
   padding-top: 50px;
   padding-left: 5%;
-  background-color: #000030;
+  background-color: #0A0A2A;
   font-size: 35px;
   margin-bottom: 0;
 }
 .contato p{
   padding-left: 50px;
   font-family:"montserrat";
+  font-style: #DCDCDC;
   font-size:14px;
   padding-bottom: 15px;
+  margin:0;
 }
 /*RODAPÉ*/
-.footer p{
+.footer-grid{
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #070719;
+}
+.footer-grid p{
   font-family: "sans-serif";
   text-transform: uppercase;
-  text-align: center;
+  float:right;
   padding: 1%;
-  width: 100%;
-  background:#000030;
+  margin:0;
 }
-.footer img{
-  background:#000030;
-  width:10%;
+.footer-grid img{
+  background:#070719;
+  width:150px;
 }
+
 /*CELULAR E TABLET*/
 @media screen and (max-width:800px) {
   .mostrar-menu,.esconder-menu{
@@ -161,18 +175,6 @@ body{
   #chk:checked ~ .menu{
     right: 0;
   }
-  .capa img{
-  width: 100%;
-  margin-top: 18%;
-}
-.movimento img{
-  zoom: 100%;
-}
-.imagem{
-  width: 60%;
-}
-.footer img{
-  width: 25%;
-}
+
 
 
